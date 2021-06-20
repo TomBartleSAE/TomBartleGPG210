@@ -31,6 +31,8 @@ namespace Soccer
             if (team.myTeam == GetComponent<Team>().myTeam) // Checks if my team scored
             {
                 print("Go " + GetComponent<Team>().myTeam.ToString() + " team!");
+                
+                GetComponent<Rigidbody>().AddForce(transform.up * UnityEngine.Random.Range(100,300));
             }
         }
     }

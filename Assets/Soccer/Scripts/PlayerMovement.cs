@@ -1,11 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Soccer
 {
-    public class Ball : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody rb;
         public float speed = 5f;
@@ -17,8 +15,10 @@ namespace Soccer
 
         private void Update()
         {
-            rb.velocity = new Vector3(Input.GetAxis("Horizontal"), 0,0) * speed; // Move ball left or right when A/D is pressed
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+
+            rb.velocity = new Vector3(horizontal * speed, rb.velocity.y, vertical * speed);
         }
     }
 }
-
