@@ -17,7 +17,7 @@ namespace Soccer
 
         private void Update()
         {
-            rb.velocity = new Vector3(Input.GetAxis("Horizontal"), 0,0) * speed;
+            rb.velocity = new Vector3(Input.GetAxis("Horizontal"), 0,0) * speed; // Move ball left or right when A/D is pressed
         }
     }
 }
