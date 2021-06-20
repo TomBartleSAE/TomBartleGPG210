@@ -15,9 +15,12 @@ namespace Soccer
             }
         }
 
-        public void Cheer()
+        public void Cheer(Team team)
         {
-            print("Yay!");
+            if (team.myTeam == GetComponent<Team>().myTeam)
+            {
+                print("Go " + GetComponent<Team>().myTeam.ToString() + " team!");
+            }
         }
     }
 }

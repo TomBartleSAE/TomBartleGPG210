@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 749229188}
   - component: {fileID: 749229187}
   - component: {fileID: 749229190}
+  - component: {fileID: 749229191}
   m_Layer: 0
   m_Name: BlueTeamSpectator
   m_TagString: Untagged
@@ -812,6 +813,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b33fbf40c465404fadda7797287b5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &749229191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749229185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5551ddebd885a4d8fc7dacd8b34fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 1
 --- !u!1 &837270972
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +839,7 @@ GameObject:
   - component: {fileID: 837270975}
   - component: {fileID: 837270974}
   - component: {fileID: 837270977}
+  - component: {fileID: 837270978}
   m_Layer: 0
   m_Name: RedTeamSpectator
   m_TagString: Untagged
@@ -922,6 +937,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b33fbf40c465404fadda7797287b5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &837270978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837270972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5551ddebd885a4d8fc7dacd8b34fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 0
 --- !u!1 &966648290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1711,7 @@ GameObject:
   - component: {fileID: 1464564660}
   - component: {fileID: 1464564662}
   - component: {fileID: 1464564661}
+  - component: {fileID: 1464564663}
   m_Layer: 0
   m_Name: RedGoal
   m_TagString: Untagged
@@ -1732,6 +1761,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b35c2a6b6dc6264cbe90665db1c05d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1464564663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464564659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5551ddebd885a4d8fc7dacd8b34fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 0
 --- !u!1 &1530785857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,6 +1820,7 @@ GameObject:
   - component: {fileID: 1615455499}
   - component: {fileID: 1615455501}
   - component: {fileID: 1615455500}
+  - component: {fileID: 1615455502}
   m_Layer: 0
   m_Name: BlueGoal
   m_TagString: Untagged
@@ -1827,6 +1870,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b35c2a6b6dc6264cbe90665db1c05d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1615455502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615455498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5551ddebd885a4d8fc7dacd8b34fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTeam: 1
 --- !u!1 &1944268669
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ namespace Soccer
 {
     public class Goal : MonoBehaviour
     {
-        public event Action OnGoal;
+        public event Action<Team> OnGoal;
         
         public void OnTriggerEnter(Collider other)
         {
@@ -15,7 +15,7 @@ namespace Soccer
             {
                 if (OnGoal != null)
                 {
-                    OnGoal();
+                    OnGoal(GetComponent<Team>());
                 }
             }
         }
