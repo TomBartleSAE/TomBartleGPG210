@@ -8,14 +8,6 @@ namespace Soccer
     {
         public event Action OnReset;
         
-        private void OnEnable()
-        {
-            foreach (Goal goal in FindObjectsOfType<Goal>())
-            {
-                goal.OnGoal += StartCountdown;
-            }
-        }
-
         public void StartCountdown(Team team)
         {
             StartCoroutine(ResetGame());
@@ -29,7 +21,14 @@ namespace Soccer
             {
                 OnReset(); 
             }
-           
+        }
+        
+        private void OnEnable()
+        {
+            foreach (Goal goal in FindObjectsOfType<Goal>())
+            {
+                goal.OnGoal += StartCountdown;
+            }
         }
     }
 }

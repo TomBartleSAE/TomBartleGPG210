@@ -7,7 +7,9 @@ namespace Soccer
     {
         private Rigidbody rb;
         public float speed = 5f;
-        
+
+        private float horizontal, vertical;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
@@ -15,9 +17,12 @@ namespace Soccer
 
         private void Update()
         {
-            float horizontal = Input.GetAxisRaw("Horizontal");
-            float vertical = Input.GetAxisRaw("Vertical");
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+        }
 
+        private void FixedUpdate()
+        {
             rb.velocity = new Vector3(horizontal * speed, rb.velocity.y, vertical * speed);
         }
     }
